@@ -51,7 +51,7 @@ const youWiki = {
     const copyrightElement = document.getElementById('copyright');
     if (copyrightElement) {
       const author = this.config?.author || 'YOU';
-      copyrightElement.innerHTML = `${author} · Powered by <a href="https://github.com/yyzip/youWiki" target="_blank">youWiki</a> 2026`;
+      copyrightElement.innerHTML = `${author} · Powered by <a href="https://github.com/yyzip/YOU-WIKI" target="_blank">youWiki</a> 2026`;
     }
   },
 
