@@ -90,10 +90,6 @@ const youWiki = {
     const opts = options || {};
     const persist = opts.persist !== false;
 
-    if (theme === 'custom') {
-      await this.loadConfig();
-    }
-
     requestAnimationFrame(() => {
       const body = document.body;
       body.classList.remove('theme-light', 'theme-dark', 'theme-custom');

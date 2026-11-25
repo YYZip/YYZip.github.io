@@ -481,6 +481,14 @@
     window.addEventListener('resize', onResize, { passive: true });
   }
 
+  // 覆盖main.js写的light主题
+  try {
+    var stored = localStorage.getItem('youTheme');
+    if (!stored || (stored !== 'light' && stored !== 'dark' && stored !== 'custom')) {
+      localStorage.setItem('youTheme', 'custom');
+    }
+  } catch (e) {}
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', boot);
   } else {
