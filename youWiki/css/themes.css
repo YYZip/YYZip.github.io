@@ -1,0 +1,425 @@
+/* 主题样式 */
+:root {
+  /* 基础颜色 */
+  --color-white: #ffffff;
+  --color-white-rgb: 255, 255, 255;
+  --color-black-rgb: 0, 0, 0;
+  --color-text-primary: #212121;
+  --color-text-secondary: #616161;
+  --color-text-muted: #6b7280;
+  --color-text-summary: #4b5563;
+
+  /* 主题色 */
+  --color-primary: #40826d;
+  --color-primary-dark: #336b57;
+  --color-primary-darker: #2a5746;
+
+  /* 背景色 */
+  --color-bg-light: #f5f5f5;
+  --color-bg-lighter: #f3f4f6;
+  --color-bg-lightest: #f1f1f1;
+
+  /* 边框色 */
+  --color-border-light: #e5ebe9;
+  --color-border-medium: #d1dbda;
+  --color-border-dark: #e0e0e0;
+  --color-border-darker: #ddd;
+  --color-border-heading: #cbe1d9;
+  --color-border-tab: #e1e1e1;
+
+  /* 功能色 */
+  --color-error: #ef4444;
+  --color-code: #d32f2f;
+  --color-code-bg: #f5f5f5;
+
+  /* 按钮颜色 */
+  --color-button-text: #375151;
+  --color-button-hover-text: #112227;
+
+  /* 版权颜色 */
+  --color-copyright-bg: #112227;
+
+  /* 通用灰度色 */
+  --color-gray-5: #555;
+  --color-gray-6: #666;
+  --color-gray-8: #888;
+  --color-gray-3: #333;
+
+  /* 透明度 */
+  --opacity-hover: 0.05;
+  --opacity-hover-strong: 0.1;
+  --opacity-overlay: 0.5;
+  --opacity-shadow: 0.2;
+  --opacity-focus: 0.2;
+
+  /* 输入框阴影颜色 */
+  --color-shadow-primary: rgba(64, 130, 109, var(--opacity-focus));
+  --color-shadow-dark: rgba(252, 208, 0, var(--opacity-focus));
+  --color-shadow-custom: rgba(0, 255, 255, var(--opacity-focus));
+
+  /* 黑色主题 */
+  --color-dark-bg: #121212;
+  --color-dark-bg-light: #1e1e1e;
+  --color-dark-bg-lighter: #2d2d2d;
+  --color-dark-text: #e0e0e0;
+  --color-dark-text-muted: #aaaaaa;
+  --color-dark-text-secondary: #bbbbbb;
+  --color-dark-border: #333333;
+  --color-dark-border-light: #444444;
+  --color-dark-primary: #fcd200;
+  --color-dark-primary-light: #b8941d;
+  --color-dark-code: #ffd700;
+  --color-dark-code-bg: #333333;
+  --dark-overlay: 0.7;
+  --dark-shadow: 0.5;
+  --dark-hover: 0.1;
+  --dark-hover-strong: 0.15;
+  --color-dark-toc-number: #888888;
+  --color-dark-accent: #d4a000;
+  --color-dark-accent-hover: #b38600;
+  --color-copyright-bg-dark: #161500;
+
+  /* 自定义主题 */
+  --color-custom-bg: #0a1a2a;
+  --color-custom-bg-light: #1a2a3a;
+  --color-custom-bg-lighter: #2a3a4a;
+  --color-custom-bg-hover: #3a4a5a;
+  --color-custom-text: #a8e6cf;
+  --color-custom-text-light: #88d8c0;
+  --color-custom-text-secondary: #66ccb3;
+  --color-custom-border: #00ffff;
+  --color-custom-border-hover: #40e0d0;
+  --color-custom-primary: #008080;
+  --color-custom-primary-dark: #006666;
+  --color-custom-code: #ffd700;
+  --color-custom-overlay-bg: 0, 128, 128;
+  --color-custom-shadow-bg: 0, 255, 255;
+  --custom-overlay: 0.7;
+  --custom-shadow: 0.3;
+  --custom-hover: 0.2;
+  --custom-hover-strong: 0.3;
+  --color-copyright-bg-custom: #051015;
+}
+
+
+
+/* ========== 白色主题 ========== */
+body.theme-light {
+  --bg-color: var(--color-white);
+  --text-color: var(--color-text-primary);
+  --h1-border-color: var(--color-border-heading);
+  --h2-border-color: var(--color-border-heading);
+  --hr-color: var(--color-border-light);
+  --scrollbar-track-bg: var(--color-bg-lightest);
+  --scrollbar-thumb-bg: var(--color-gray-8);
+  --scrollbar-thumb-hover-bg: var(--color-gray-5);
+  --hover-bg-color: rgba(var(--color-black-rgb), var(--opacity-hover));
+  --hover-bg-color-strong: rgba(var(--color-black-rgb), var(--opacity-hover-strong));
+  --blackout-color: var(--color-text-primary);
+  --note-border-color: var(--color-gray-6);
+  --note-after-bg: var(--color-gray-3);
+  --note-after-color: var(--color-white);
+  --tab-label-bg: var(--color-bg-lightest);
+  --tab-label-hover-bg: var(--color-border-tab);
+  --tab-content-border: var(--color-border-tab);
+  --tab-checked-label-bg: var(--color-border-darker);
+  --overlay-bg: rgba(var(--color-black-rgb), var(--opacity-overlay));
+  --sidebar-shadow-color: rgba(var(--color-black-rgb), var(--opacity-shadow));
+  --sidebar-border-color: var(--color-border-light);
+  --button-bg: var(--color-border-light);
+  --button-text: var(--color-button-text);
+  --button-hover-bg: var(--color-border-medium);
+  --button-hover-text: var(--color-button-hover-text);
+  --table-color: var(--color-text-primary);
+  --table-header-bg: #eef4f1;
+  --table-row-even-bg: #f7faf8;
+  --table-border-color: #d8e2dd;
+
+  /* 链接颜色 */
+  --link-color: var(--color-primary);
+  --link-hover-color: var(--color-primary-dark);
+
+  /* 强调色与次要文字（ink 模块使用） */
+  --accent-color: var(--color-primary);
+  --color-muted: var(--color-text-muted);
+
+  /* 侧边栏颜色 */
+  --sidebar-bg: var(--color-bg-lighter);
+
+  /* 搜索相关颜色 */
+  --search-icon-color: var(--color-text-muted);
+  --search-icon-focus-color: var(--color-primary);
+  --search-input-border: var(--color-border-medium);
+  --search-input-focus-border: var(--color-primary);
+  --search-input-focus-shadow: var(--color-shadow-primary);
+  --cache-info-color: var(--color-text-muted);
+
+  /* 页内目录颜色 */
+  --page-toc-bg: var(--color-white);
+  --toc-number-color: var(--color-gray-6);
+
+  /* 搜索模态框颜色 */
+  --search-modal-bg: var(--color-white);
+  --search-modal-header-border: var(--color-border-light);
+  --search-modal-close-bg: var(--color-border-light);
+  --search-modal-close-hover-bg: var(--color-border-medium);
+
+  /* 滚动文本容器颜色 */
+  --ticker-bg: var(--color-bg-lighter);
+
+  /* 版权信息颜色 */
+  --copyright-bg: var(--color-copyright-bg);
+  --copyright-text: var(--color-white);
+
+  /* 主题按钮颜色 */
+  --btn-theme-active-bg: var(--color-primary);
+  --btn-theme-active-text: var(--color-white);
+  --btn-float-bg: var(--color-primary-dark);
+  --btn-float-hover-bg: var(--color-primary-darker);
+
+  /* 搜索结果颜色 */
+  --search-result-count-color: var(--color-text-muted);
+  --search-result-category-bg: var(--color-border-light);
+  --search-result-match-color: var(--color-text-muted);
+  --search-result-summary-color: var(--color-text-summary);
+  --search-result-item-border: var(--color-border-light);
+
+  /* 导航按钮颜色 */
+  --nav-btn-bg: var(--color-border-light);
+  --nav-btn-hover-bg: var(--color-border-medium);
+
+  /* 空状态颜色 */
+  --toc-empty-color: var(--color-text-muted);
+
+  /* 引用块颜色 */
+  --blockquote-border-color: var(--color-primary);
+  --blockquote-text-color: var(--color-text-secondary);
+
+  /* 代码颜色 */
+  --code-text-color: var(--color-code);
+  --code-bg: var(--color-code-bg);
+  --pre-bg: var(--color-code-bg);
+  --pre-border-color: var(--color-border-dark);
+  --pre-text-color: var(--color-text-primary);
+
+  /* 标题颜色 */
+  --heading-color: var(--color-button-hover-text);
+
+  /* 输入框颜色 */
+  --input-bg: var(--color-white);
+  --input-text: var(--color-text-primary);
+}
+
+/* ========== 黑色主题 ========== */
+body.theme-dark {
+  --bg-color: var(--color-dark-bg);
+  --text-color: var(--color-dark-text);
+  --h1-border-color: var(--color-dark-border-light);
+  --h2-border-color: var(--color-dark-border-light);
+  --hr-color: var(--color-dark-border-light);
+  --scrollbar-track-bg: var(--color-dark-bg-lighter);
+  --scrollbar-thumb-bg: var(--color-gray-6);
+  --scrollbar-thumb-hover-bg: var(--color-gray-8);
+  --hover-bg-color: rgba(var(--color-white-rgb), var(--dark-hover));
+  --hover-bg-color-strong: rgba(var(--color-white-rgb), var(--dark-hover-strong));
+  --blackout-color: var(--color-dark-text);
+  --note-border-color: var(--color-gray-8);
+  --note-after-bg: var(--color-gray-5);
+  --note-after-color: var(--color-white);
+  --tab-label-bg: var(--color-dark-border);
+  --tab-label-hover-bg: var(--color-dark-border-light);
+  --tab-content-border: var(--color-dark-border-light);
+  --tab-checked-label-bg: var(--color-gray-5);
+  --overlay-bg: rgba(var(--color-black-rgb), var(--dark-overlay));
+  --sidebar-shadow-color: rgba(var(--color-black-rgb), var(--dark-shadow));
+  --sidebar-border-color: var(--color-dark-border);
+  --button-bg: var(--color-dark-border);
+  --button-text: var(--color-dark-text);
+  --button-hover-bg: var(--color-dark-border-light);
+  --button-hover-text: var(--color-white);
+  --table-color: var(--color-dark-text);
+  --table-header-bg: #242424;
+  --table-row-even-bg: #1d1d1d;
+  --table-border-color: #3a3a3a;
+
+  /* 链接颜色 */
+  --link-color: var(--color-dark-primary);
+  --link-hover-color: var(--color-dark-primary-light);
+
+  /* 强调色与次要文字（ink 模块使用） */
+  --accent-color: var(--color-dark-accent);
+  --color-muted: var(--color-dark-text-muted);
+
+  /* 侧边栏颜色 */
+  --sidebar-bg: var(--color-dark-bg-lighter);
+
+  /* 搜索相关颜色 */
+  --search-icon-color: var(--color-dark-text-muted);
+  --search-icon-focus-color: var(--color-dark-primary);
+  --search-input-border: var(--color-dark-border-light);
+  --search-input-focus-border: var(--color-dark-primary);
+  --search-input-focus-shadow: var(--color-shadow-dark);
+  --cache-info-color: var(--color-dark-text-secondary);
+
+  /* 页内目录颜色 */
+  --page-toc-bg: var(--color-dark-bg-light);
+  --toc-number-color: var(--color-dark-toc-number);
+
+  /* 搜索模态框颜色 */
+  --search-modal-bg: var(--color-dark-bg-light);
+  --search-modal-header-border: var(--color-dark-border);
+  --search-modal-close-bg: var(--color-dark-border);
+  --search-modal-close-hover-bg: var(--color-dark-border-light);
+
+  /* 滚动文本容器颜色 */
+  --ticker-bg: var(--color-dark-bg-lighter);
+
+  /* 版权信息颜色 */
+  --copyright-bg: var(--color-copyright-bg-dark);
+  --copyright-text: var(--color-white);
+
+  /* 主题按钮颜色 */
+  --btn-theme-active-bg: var(--color-dark-accent);
+  --btn-theme-active-text: var(--color-white);
+  --btn-float-bg: var(--color-dark-accent);
+  --btn-float-hover-bg: var(--color-dark-accent-hover);
+
+  /* 搜索结果颜色 */
+  --search-result-count-color: var(--color-dark-text-secondary);
+  --search-result-category-bg: var(--color-dark-border);
+  --search-result-match-color: var(--color-dark-text-muted);
+  --search-result-summary-color: var(--color-dark-text-secondary);
+  --search-result-item-border: var(--color-dark-border);
+
+  /* 导航按钮颜色 */
+  --nav-btn-bg: var(--color-dark-border);
+  --nav-btn-hover-bg: var(--color-dark-border-light);
+
+  /* 空状态颜色 */
+  --toc-empty-color: var(--color-dark-text-muted);
+
+  /* 引用块颜色 */
+  --blockquote-border-color: var(--color-dark-primary);
+  --blockquote-text-color: var(--color-dark-text-secondary);
+
+  /* 代码颜色 */
+  --code-text-color: var(--color-dark-code);
+  --code-bg: var(--color-dark-code-bg);
+  --pre-bg: var(--color-dark-bg-lighter);
+  --pre-border-color: var(--color-dark-border-light);
+  --pre-text-color: var(--color-dark-text);
+
+  /* 标题颜色 */
+  --heading-color: var(--color-white);
+
+  /* 输入框颜色 */
+  --input-bg: var(--color-dark-bg-lighter);
+  --input-text: var(--color-dark-text);
+}
+
+/* ========== 自定义主题 ========== */
+body.theme-custom {
+  --bg-color: var(--color-custom-bg);
+  --text-color: var(--color-custom-text);
+  --h1-border-color: var(--color-custom-border);
+  --h2-border-color: var(--color-custom-border);
+  --hr-color: var(--color-custom-border);
+  --scrollbar-track-bg: var(--color-custom-bg-light);
+  --scrollbar-thumb-bg: var(--color-custom-border);
+  --scrollbar-thumb-hover-bg: var(--color-custom-border-hover);
+  --hover-bg-color: rgba(var(--color-custom-shadow-bg), var(--custom-hover));
+  --hover-bg-color-strong: rgba(var(--color-custom-shadow-bg), var(--custom-hover-strong));
+  --blackout-color: var(--color-custom-text);
+  --note-border-color: var(--color-custom-border);
+  --note-after-bg: var(--color-custom-primary);
+  --note-after-color: var(--color-custom-text);
+  --tab-label-bg: var(--color-custom-bg-light);
+  --tab-label-hover-bg: var(--color-custom-bg-lighter);
+  --tab-content-border: var(--color-custom-border);
+  --tab-checked-label-bg: var(--color-custom-primary);
+  --overlay-bg: rgba(var(--color-custom-overlay-bg), var(--custom-overlay));
+  --sidebar-shadow-color: rgba(var(--color-custom-shadow-bg), var(--custom-shadow));
+  --sidebar-border-color: var(--color-custom-border);
+  --button-bg: var(--color-custom-bg-light);
+  --button-text: var(--color-custom-text);
+  --button-hover-bg: var(--color-custom-bg-lighter);
+  --button-hover-text: var(--color-custom-border);
+  --table-color: var(--color-custom-text);
+  --table-header-bg: rgba(var(--color-custom-shadow-bg), 0.10);
+  --table-row-even-bg: rgba(var(--color-white-rgb), 0.04);
+  --table-border-color: rgba(var(--color-custom-shadow-bg), 0.35);
+
+  /* 链接颜色 */
+  --link-color: var(--color-custom-text-secondary);
+  --link-hover-color: var(--color-custom-text-light);
+
+  /* 强调色与次要文字（ink 模块使用） */
+  --accent-color: var(--color-custom-primary);
+  --color-muted: var(--color-custom-text-secondary);
+
+  /* 侧边栏颜色 */
+  --sidebar-bg: var(--color-custom-bg-light);
+
+  /* 搜索相关颜色 */
+  --search-icon-color: var(--color-custom-text-light);
+  --search-icon-focus-color: var(--color-custom-border);
+  --search-input-border: var(--color-custom-border);
+  --search-input-focus-border: var(--color-custom-border);
+  --search-input-focus-shadow: var(--color-shadow-custom);
+  --cache-info-color: var(--color-custom-text-secondary);
+
+  /* 页内目录颜色 */
+  --page-toc-bg: var(--color-custom-bg-light);
+  --toc-number-color: var(--color-custom-text-light);
+
+  /* 搜索模态框颜色 */
+  --search-modal-bg: var(--color-custom-bg-light);
+  --search-modal-header-border: var(--color-custom-bg-lighter);
+  --search-modal-close-bg: var(--color-custom-bg-lighter);
+  --search-modal-close-hover-bg: var(--color-custom-bg-hover);
+
+  /* 滚动文本容器颜色 */
+  --ticker-bg: var(--color-custom-bg-light);
+
+  /* 版权信息颜色 */
+  --copyright-bg: var(--color-copyright-bg-custom);
+  --copyright-text: var(--color-white);
+
+  /* 主题按钮颜色 */
+  --btn-theme-active-bg: var(--color-custom-primary);
+  --btn-theme-active-text: var(--color-custom-border);
+  --btn-float-bg: var(--color-custom-primary);
+  --btn-float-hover-bg: var(--color-custom-primary-dark);
+
+  /* 搜索结果颜色 */
+  --search-result-count-color: var(--color-custom-text-secondary);
+  --search-result-category-bg: var(--color-custom-bg-lighter);
+  --search-result-match-color: var(--color-custom-text-light);
+  --search-result-summary-color: var(--color-custom-text-light);
+  --search-result-item-border: var(--color-custom-bg-lighter);
+
+  /* 导航按钮颜色 */
+  --nav-btn-bg: var(--color-custom-bg-lighter);
+  --nav-btn-hover-bg: var(--color-custom-bg-hover);
+
+  /* 空状态颜色 */
+  --toc-empty-color: var(--color-custom-text-light);
+
+  /* 引用块颜色 */
+  --blockquote-border-color: var(--color-custom-border);
+  --blockquote-text-color: var(--color-custom-text-light);
+
+  /* 代码颜色 */
+  --code-text-color: var(--color-custom-code);
+  --code-bg: var(--color-custom-bg-lighter);
+  --pre-bg: var(--color-custom-bg-light);
+  --pre-border-color: var(--color-custom-border);
+  --pre-text-color: var(--color-custom-text);
+
+  /* 标题颜色 */
+  --heading-color: var(--color-custom-border);
+
+  /* 输入框颜色 */
+  --input-bg: var(--color-custom-bg-light);
+  --input-text: var(--color-custom-text);
+}

@@ -1,0 +1,238 @@
+/* ink相关样式 */
+/* ---------- 字体与行高 ---------- */
+
+body.theme-custom .ink-container {
+  font-family: var(--elecide-font-sans);
+}
+
+body.theme-custom .ink-paragraph {
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
+
+body.theme-custom .ink-paragraph strong {
+  color: var(--elecide-white);
+}
+
+body.theme-custom #content .ink-paragraph a {
+  color: var(--elecide-red-bright);
+  border-bottom: 1px solid rgba(var(--elecide-red-rgb), 0.4);
+}
+
+body.theme-custom #content .ink-paragraph a:hover {
+  color: var(--elecide-white);
+  border-bottom-color: var(--elecide-white);
+}
+
+/* End 标签 */
+body.theme-custom .ink-paragraph.end {
+  font-family: var(--elecide-font-serif);
+  color: var(--elecide-white);
+  letter-spacing: 0.12em;
+}
+
+/* ink-note 注释块 */
+body.theme-custom .ink-paragraph.ink-note {
+  font-family: var(--elecide-font-serif);
+  color: rgba(var(--elecide-white-rgb), 0.55);
+  border-left: 3px solid var(--elecide-red);
+  background: rgba(var(--elecide-red-rgb), 0.04);
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+/* ---------- 选项 ---------- */
+
+body.theme-custom #content .ink-choice {
+  text-align: center;
+}
+
+body.theme-custom #content .ink-choice a {
+  color: var(--elecide-red-bright);
+  border-bottom: none;
+  letter-spacing: 0.04em;
+}
+
+body.theme-custom #content .ink-choice a:hover {
+  color: var(--elecide-white);
+  border-bottom: none;
+  text-shadow: 0 0 12px rgba(var(--elecide-red-bright-rgb), 0.35);
+}
+
+body.theme-custom .ink-choice span.unclickable {
+  color: rgba(var(--elecide-white-rgb), 0.3);
+}
+
+/* ---------- 控制栏 ---------- */
+
+body.theme-custom .ink-controls {
+  border-top-color: rgba(var(--elecide-red-rgb), 0.3);
+}
+
+body.theme-custom .ink-ctrl-btn {
+  background: rgba(var(--elecide-white-rgb), 0.06);
+  color: rgba(var(--elecide-white-rgb), 0.7);
+  border: 1px solid rgba(var(--elecide-white-rgb), 0.12);
+  border-radius: 0;
+  font-family: var(--elecide-font-sans);
+  letter-spacing: 0.04em;
+}
+
+body.theme-custom .ink-ctrl-btn:hover {
+  background: rgba(var(--elecide-red-rgb), 0.18);
+  color: var(--elecide-white);
+  border-color: rgba(var(--elecide-red-rgb), 0.55);
+}
+
+body.theme-custom .ink-ctrl-btn.active {
+  background: var(--elecide-red);
+  color: var(--elecide-white);
+  border-color: var(--elecide-red);
+}
+
+body.theme-custom .ink-ctrl-btn.flash {
+  background: rgba(34, 197, 94, 0.85);
+  border-color: rgba(34, 197, 94, 1);
+  color: #fff;
+}
+
+body.theme-custom .ink-ctrl-btn.error {
+  background: rgba(var(--elecide-red-bright-rgb), 0.85);
+  border-color: var(--elecide-red-bright);
+  color: #fff;
+}
+
+/* ---------- 存档面板 ---------- */
+
+body.theme-custom .ink-save-panel {
+  background: rgba(var(--elecide-white-rgb), 0.03);
+  border: 1px solid rgba(var(--elecide-red-rgb), 0.3);
+  border-radius: 0;
+}
+
+body.theme-custom .ink-save-item {
+  background: rgba(var(--elecide-white-rgb), 0.04);
+  border-radius: 0;
+  border-left: 2px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+body.theme-custom .ink-save-item:hover {
+  background: rgba(var(--elecide-white-rgb), 0.07);
+  border-left-color: var(--elecide-red);
+}
+
+body.theme-custom .ink-save-item-id {
+  color: var(--elecide-white);
+  font-family: var(--elecide-font-serif);
+}
+
+body.theme-custom .ink-save-item-name {
+  color: rgba(var(--elecide-white-rgb), 0.65);
+}
+
+body.theme-custom .ink-save-item-time {
+  color: rgba(var(--elecide-white-rgb), 0.35);
+}
+
+body.theme-custom .ink-save-action-btn {
+  background: rgba(var(--elecide-white-rgb), 0.06);
+  color: rgba(var(--elecide-white-rgb), 0.7);
+  border: 1px solid rgba(var(--elecide-white-rgb), 0.1);
+  border-radius: 0;
+}
+
+body.theme-custom .ink-save-action-btn:hover {
+  background: rgba(var(--elecide-red-rgb), 0.2);
+  color: var(--elecide-white);
+  border-color: rgba(var(--elecide-red-rgb), 0.5);
+}
+
+body.theme-custom .ink-save-action-btn.delete:hover {
+  background: var(--elecide-red);
+  border-color: var(--elecide-red);
+}
+
+body.theme-custom .ink-save-new-btn {
+  background: transparent;
+  color: rgba(var(--elecide-white-rgb), 0.6);
+  border: 1px dashed rgba(var(--elecide-red-rgb), 0.4);
+  border-radius: 0;
+}
+
+body.theme-custom .ink-save-new-btn:hover {
+  background: rgba(var(--elecide-red-rgb), 0.1);
+  color: var(--elecide-white);
+  border-color: var(--elecide-red);
+}
+
+body.theme-custom .ink-save-empty {
+  color: rgba(var(--elecide-white-rgb), 0.35);
+  font-family: var(--elecide-font-serif);
+}
+
+/* ---------- 说话人 ---------- */
+
+body.theme-custom .ink-speaker {
+  font-family: var(--elecide-font-sans);
+}
+
+body.theme-custom .ink-speaker-name {
+  font-family: var(--elecide-font-serif);
+  letter-spacing: 0.04em;
+}
+
+body.theme-custom .ink-speaker.ink-has-avatar .ink-speaker-body {
+  border: 1px solid rgba(var(--elecide-white-rgb), 0.06);
+}
+
+body.theme-custom .ink-speaker .ink-avatar {
+  border: 1px solid rgba(var(--elecide-white-rgb), 0.12);
+}
+
+/* ---------- 输入框 ---------- */
+
+body.theme-custom .ink-input-label {
+  font-family: var(--elecide-font-serif);
+  letter-spacing: 0.04em;
+  color: var(--elecide-white);
+}
+
+body.theme-custom .ink-input-field {
+  background: rgba(var(--elecide-black-rgb), 0.5);
+  border: 1px solid rgba(var(--elecide-red-rgb), 0.35);
+  border-radius: 0;
+  color: var(--elecide-white);
+  font-family: var(--elecide-font-sans);
+}
+
+body.theme-custom .ink-input-field:focus {
+  border-color: var(--elecide-red-bright);
+  box-shadow: 0 0 0 2px rgba(var(--elecide-red-rgb), 0.2);
+}
+
+body.theme-custom .ink-input-wrapper.ink-input-submitted .ink-input-label,
+body.theme-custom .ink-input-wrapper.ink-input-submitted .ink-input-field {
+  color: rgba(var(--elecide-white-rgb), 0.35);
+}
+
+/* ---------- 错误 ---------- */
+
+body.theme-custom .ink-error {
+  color: var(--elecide-red-bright);
+}
+
+body.theme-custom .ink-error i {
+  color: var(--elecide-red);
+}
+
+/* ---------- 动画 ---------- */
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  body.theme-custom .ink-story-content > *,
+  body.theme-custom .ink-choices > * {
+    transition: opacity 0.4s ease-out,
+      color var(--transition-speed) ease,
+      background-color var(--transition-speed) ease;
+  }
+}

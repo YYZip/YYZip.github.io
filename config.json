@@ -1,7 +1,19 @@
 {
-  "name": "空想压缩",
-  "ver": "",
-  "logo": "amWiki/images/logo.png",
-  "colour":"#40826d",
-  "imports": "assets/css/yyz.css"
+  "title": "空想压缩",
+  "author": "由野哉",
+  "theme": {
+    "background": "#0a1a2a",
+    "text": "#a8e6cf",
+    "primary": "#008080",
+    "secondary": "#00ffff",
+    "font": "Microsoft YaHei"
+  },
+  "tickerTexts": [
+    "只是存一些很多年前写的丢人东西的地方",
+    "就当没看到直接走掉吧……",
+    "算我求你了别看这个网页",
+    "这个人到底在写什么啊……",
+    "毫无疑问，这个人就是文盲",
+    "不要嘲笑我，我是文盲（悲）"
+  ]
 }
